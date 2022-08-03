@@ -1,0 +1,10 @@
+extends baseEmail
+
+block content
+  h2 HowDoISing,
+  h4 Verify Your howdoising account
+  p Hi #{firstName},
+  p Click on the link below to verify your account
+  a(href=`${url}`, target='_blank') #{url}
+  p This link is valid for only 10 minutes
+  p If you did not signup for this account your can ignore this email and we will delete your account
